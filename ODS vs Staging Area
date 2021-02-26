@@ -1,0 +1,6 @@
+Difference between ODS and Staging Area :
+
+ODS : The area where the current data is temporarily stored before going to the staging area.
+
+Staging Area : The area where the etl are implemented on the data and the data is made ready to be stored in the data warehouse.
+
