@@ -1,0 +1,9 @@
+1) I have to use man command to find out the resources how u can change the hostname of my computer.
+
+Ans : man hostname
+	hostname adipon
+
+2) Find out which version of kernel I am using (man command)
+
+Ans : man uname
+	uname -r

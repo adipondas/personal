@@ -1,0 +1,32 @@
+Copy the files
+- create three folder in a particular location as /tmp/data/bolly  /tmp/data/holly   /tmp/data/tolly   [only 1 command]
+  -> go at /etc and copy all the files you have starting with name a,b,c or d  , take that data to the /tmp/data location
+
+Ans : 1) sudo mkdir /tmp/data/bolly /tmp/data/holly /tmp/data/tolly	
+
+2) sudo find /etc/ -type f -name "[abcd]*" -exec cp {} /tmp/data/ \;
+
+ 
+
+- Take the above files, if the file name starts with a or b take to bolly
+
+ Ans : sudo cp -r /tmp/data/[ab]* /tmp/data/bolly
+
+c or d   -> holly
+
+ Ans : sudo cp -r /tmp/data/[cd]* /tmp/data/holly
+
+
+Take those file which are bigger in amount in size(  file > 40M) -> tolly
+
+ 
+Ans : find /tmp/data/ -type f -size +40000k -exec cp {} /tmp/data/tolly/ \;
+
+
+- You can create the tar file of each folder {bolly, holly, tolly} in a desktop folder named as "MoviesData" & make sure the tar files are
+present with its respective names
+
+Ans : sudo tar -cvf MoviesData/bolly.tar /tmp/data/bolly
+sudo tar -cvf MoviesData/holly.tar /tmp/data/holly
+sudo tar -cvf MoviesData/tolly.tar /tmp/data/tolly
+
