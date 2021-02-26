@@ -1,0 +1,35 @@
+
+
+
+1) sudo useradd -d /home/ tushar
+sudo useradd -d /home/ nana
+sudo useradd -d /home/ jaya
+ sudo useradd -d /home/ maulik
+
+
+
+2) sudo chage -M 90 tushar
+  sudo chage -M 90 nana
+  sudo chage -M 90 jaya
+  sudo chage -M 90 maulik
+
+3)sudo groupadd marketing 
+sudo usermod -g marketing tushar
+sudo usermod -g marketing nana
+
+sudo groupadd it
+sudo usermod -g it jaya 
+sudo usermod -g it maulik
+
+4) sudo groupadd capgemini
+sudo usermod -aG capgemini tushar
+sudo usermod -aG capgemini nana
+sudo usermod -aG capgemini jaya
+sudo usermod -aG capgemini maulik
+
+5)
+sudo useradd -c "Capgemini Employee for Big Data" -u 2001 -g capgemini -s /bin/sh Special
+
+
+6)echo "tushar:321" | sudo chpasswd
+
